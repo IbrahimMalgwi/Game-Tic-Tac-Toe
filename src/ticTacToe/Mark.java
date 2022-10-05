@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public enum Mark {
+package ticTacToe;
+
+public enum Mark {
+    X, O, E;
 }
