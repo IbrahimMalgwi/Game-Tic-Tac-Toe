@@ -84,7 +84,22 @@ public class Board {
     public boolean isTied() {
         boolean isX = gameBoard[0][0] == X && gameBoard[0][1] == X && gameBoard[0][2] == X;
         boolean isO = gameBoard[1][0] == X && gameBoard[1][1] == X && gameBoard[1][2] == X;
-
         return true;
+    }
+
+    public boolean isATie(){
+        if(!isWinner() && !isNotE()) return true;
+        else return false;
+    }
+
+    private boolean isNotE() {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3 ; j++) {
+                if (gameBoard[i][j] == E){
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

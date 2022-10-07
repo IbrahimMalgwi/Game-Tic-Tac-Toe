@@ -272,7 +272,8 @@ class PlayerTest {
         player1.playGame(7, board);
         player2.playGame(9, board);
 
-
     }
+
+
 
 }
